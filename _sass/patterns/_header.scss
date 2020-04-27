@@ -1,0 +1,53 @@
+.masthead {
+  background-color: $color-primary;
+  .wrapper {
+    display: flex;
+    .logo-wrap {
+      text-decoration: none;
+      color: #fff;
+      @include hov() {
+        color: $color-secondary;
+      }
+    }
+    .logo {
+      .names {
+        display: block;
+      }
+      .title {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 4px;
+        display: block;
+        margin-top: -6px;
+      }
+    }
+    @media only screen and (min-width: 38em) {
+      
+      .logo {
+        .title {
+          letter-spacing: 7.25px;
+          margin-top: -10px;
+        }
+      }
+    
+    }
+    @media only screen and (min-width: 60em) {
+      
+      .logo {
+        .title {
+          letter-spacing: 8px;
+        }
+      }
+    
+    }
+    @media only screen and (min-width: 90em) {
+      
+      .logo {
+        .title {
+          letter-spacing: 8.5px;
+        }
+      }
+    
+    }
+  }
+}

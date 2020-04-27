@@ -1,0 +1,11 @@
+html {
+  font-family: $font-primary;
+}
+
+a {
+  color: $color-primary;
+  transition:
+    border-color $transition,
+    background-color $transition,
+    color $transition;
+}
